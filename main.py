@@ -6,7 +6,9 @@ print(a.documentInfo)
 #for total no. of pages
 print(a.getNumPages())
 str = ""
-for i in range(5,10):
+print("enter starting page")
+n= int(input())
+for i in range(n,10):
     str += a.getPages(i).extractText()
 
 with open("text.txt", "w", encoding='utf-8') as f:
